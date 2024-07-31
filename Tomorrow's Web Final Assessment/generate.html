@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style3.css">
+    <title>Generate</title>
+</head>
+<body>
+    <div class="holder"> <!--wraps the entire navigation bar, likely providing common styling or layout properties for the navigation bar> -->
+        <nav class="nav"><!--element defines a section intended for navigation links-->
+            <div class="logo-nav"> <!--contains the website's logo-->
+                <p>RECIPEQUE</p>
+            </div>
+            <div class="menu-nav" id="navMenu"> <!--containing the navigation links, allows for unique identification-->
+                <ul>
+                    <li><a href="home.html" class="link">Home</a></li> <!--active indicating the currently selected page.-->
+                    <li><a href="about.html" class="link">About</a>
+                    <li><a href="#" class="link active">Generate</a></li>
+                </ul>
+            </div>
+            <div class="navi-button"> <!--buttons for signing in and signing up.-->
+                <button class="btn btn-1" id="loginBtn" onclick="login()">Sign In</button>
+                <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i> <!--attribute specifies that clicking this icon triggers a JavaScript function-->
+            </div>
+        </nav>
+        <div class="box-con">
+            <div class="recipe-box">
+                <div class="browse">
+                    <h2 class="title">Generate a Recipe</h2>
+                    <blockquote>A recipe has no soul. You, as the cook, must bring soul to the recipe.<br>
+                        <cite>Thomas Keller</cite>
+                    </blockquote>
+                    <div class="recipe-browse-box">
+                        <input type="text" class="browse-cont" placeholder="Search for a recipe" id="input-browse">
+                        <button type="submit" class="browse-btn btn" id="browse-btn">
+                            <i class='bx bx-search-alt'></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="recipe-result">
+                    <h2 class="title">Your search results:</h2>
+                    <div id="food">
+                        <!--Meal Items
+                        <div class="food-itm">
+                            <div class="food-img">
+                                <img src="images/recipe.jpg" alt="meal1">
+                            </div>
+                            <div class="food-name">
+                                <h3>Tomato Pasta</h3>
+                                <a href="#" class="food-btn">View Recipe</a>
+                            </div>
+                        </div>-->
+                    </div>
+                        <div id="food-details">
+                            <!-- recipe close btn -->
+                            <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+                                <i class='bx bx-x'></i>
+                            </button>
+                           
+                            <!-- meal content -->
+                             <div id="food-details-content">
+                                <h2 class="recipe-title">Meals Name Here</h2>
+                                <p class="recipe-category">Category Name</p>
+                                <div class="recipe-instruct">
+                                    <h3>Instructions:</h3>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                        Quo blanditiis quis accusantium natus! 
+                                        Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, 
+                                        soluta suscipit quam eos velit autem iste!</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
+                                </div>
+                                <div class="recipe-meal-img">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="recipe-link">
+                                    <a href="#" target="_blank">Watch Video</a>
+                                </div>
+                            </div>
+                        </div>  
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
